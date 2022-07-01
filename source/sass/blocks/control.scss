@@ -55,7 +55,6 @@
 }
 
 .control__input:disabled:hover {
-
   & + .control__mark {
     border-color: $light-grey;
   }
@@ -66,7 +65,6 @@
 }
 
 .control__input:disabled:checked {
-
   & + .control__mark {
     border-color: $basic-grey;
   }
@@ -77,7 +75,6 @@
 }
 
 .control__input:disabled {
-
   & + .control__mark {
     border-color: $light-grey;
   }
@@ -88,7 +85,6 @@
 }
 
 .control__input:disabled:checked:hover {
-
   & ~ .control__label::after {
     background-color: $basic-grey;
   }

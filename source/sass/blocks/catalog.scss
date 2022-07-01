@@ -28,7 +28,7 @@
 
   &::after {
     left: calc(50% - 32px);
-    content: 'Каталог';
+    content: "Каталог";
   }
 
   @media (min-width: $tablet-width) {

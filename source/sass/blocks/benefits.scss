@@ -20,7 +20,7 @@
 
   &::after {
     left: calc(50% - 60px);
-    content: 'Преимущества';
+    content: "Преимущества";
   }
 
   @media (min-width: $tablet-width) {
@@ -78,25 +78,25 @@
 
     &::before {
       top: 0;
-      left: calc(50% - 25px)
+      left: calc(50% - 25px);
     }
   }
 }
 
 .benefits__subheading--speed::before {
-  background-image: url('../img/speed.svg');
+  background-image: url("../img/speed.svg");
 }
 
 .benefits__subheading--comfort {
-
   &::before {
     width: 52px;
     left: calc(50% - 26px);
-    background-image: url('../img/comfort.svg');
+    background-image: url("../img/comfort.svg");
   }
 
   @media (min-width: $tablet-width) {
     padding-left: 72px;
+
     &::before {
       left: 0;
     }
@@ -107,7 +107,7 @@
 
     &::before {
       top: 0;
-      left: calc(50% - 25px)
+      left: calc(50% - 25px);
     }
   }
 }
@@ -115,7 +115,7 @@
 .benefits__subheading--energy::before {
   width: 42px;
   left: calc(50% - 21px);
-  background-image: url('../img/energy.svg');
+  background-image: url("../img/energy.svg");
 
   @media (min-width: $tablet-width) {
     left: 0;
@@ -129,7 +129,7 @@
 .benefits__subheading--eco::before {
   width: 46px;
   left: calc(50% - 23px);
-  background-image: url('../img/eco.svg');
+  background-image: url("../img/eco.svg");
 
   @media (min-width: $tablet-width) {
     left: 0;

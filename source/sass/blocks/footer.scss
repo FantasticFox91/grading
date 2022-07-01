@@ -60,6 +60,39 @@
 }
 
 .footer__contacts {
+  padding-bottom: 12px;
+
+  .footer__link {
+    position: relative;
+    padding-left: 19px;
+    padding-right: 20px;
+    font-size: 14px;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  .footer__link--location {
+    &::after {
+      @include pseudo();
+      top: 9px;
+      left: 0;
+      width: 13px;
+      height: 16px;
+      background-image: url("../img/location.svg");
+    }
+  }
+
+  .footer__link--phone {
+    &::after {
+      @include pseudo();
+      top: 9px;
+      left: 0;
+      width: 13px;
+      height: 16px;
+      background-image: url("../img/phone.svg");
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 13px;
   }
@@ -104,41 +137,6 @@
 
 .footer__link:active {
   color: $primary-color-dark;
-}
-
-.footer__contacts {
-  padding-bottom: 12px;
-
-  .footer__link {
-    position: relative;
-    padding-left: 19px;
-    padding-right: 20px;
-    font-size: 14px;
-    letter-spacing: normal;
-    text-transform: none;
-  }
-
-  .footer__link--location {
-    &::after {
-      @include pseudo();
-      top: 9px;
-      left: 0;
-      width: 13px;
-      height: 16px;
-      background-image: url('../img/location.svg');
-    }
-  }
-
-  .footer__link--phone {
-    &::after {
-      @include pseudo();
-      top: 9px;
-      left: 0;
-      width: 13px;
-      height: 16px;
-      background-image: url('../img/phone.svg');
-    }
-  }
 }
 
 .footer__developer-info {

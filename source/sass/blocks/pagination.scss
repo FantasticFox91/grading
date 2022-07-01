@@ -42,12 +42,12 @@
 
 .pagination__link:not(.pagination__link--current):hover {
   background-color: $primary-color-light;
-  color: $basic-white
+  color: $basic-white;
 }
 
 .pagination__link:not(.pagination__link--current):active {
   background-color: $primary-color-dark;
-  color: $basic-white
+  color: $basic-white;
 }
 
 .pagination__link:disabled {

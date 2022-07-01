@@ -89,8 +89,9 @@
 }
 
 .slider__old-price {
-  margin-right: 2px;
   @include fonts($main-font, 16px, 32px, 400, $primary-color);
+
+  margin-right: 2px;
   text-decoration: line-through;
 }
 

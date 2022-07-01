@@ -10,7 +10,6 @@
 }
 
 .top-menu__wrapper {
-
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
@@ -80,7 +79,6 @@
 }
 
 .top-menu__logo {
-
   @media (min-width: $tablet-width) {
     margin-right: 30px;
     order: 1;
