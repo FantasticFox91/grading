@@ -1,0 +1,188 @@
+.benefits {
+  padding-top: 41px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 90px;
+    padding-bottom: 87px;
+  }
+}
+
+.benefits__heading {
+  margin: 0;
+  margin-bottom: 36px;
+  text-align: center;
+
+  &::after {
+    left: calc(50% - 60px);
+    content: 'Преимущества';
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.benefits__item {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.benefits__subheading {
+  position: relative;
+  margin: 0;
+  margin-bottom: 4px;
+  padding-top: 66px;
+  font-size: 18px;
+  line-height: 32px;
+
+  &::before {
+    @include pseudo();
+    top: 0;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 56px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-left: 72px;
+    font-size: 24px;
+    line-height: 36px;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+    padding-left: 0;
+
+    &::before {
+      top: 0;
+      left: calc(50% - 25px)
+    }
+  }
+}
+
+.benefits__subheading--speed::before {
+  background-image: url('../img/speed.svg');
+}
+
+.benefits__subheading--comfort {
+
+  &::before {
+    width: 52px;
+    left: calc(50% - 26px);
+    background-image: url('../img/comfort.svg');
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 72px;
+    &::before {
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+
+    &::before {
+      top: 0;
+      left: calc(50% - 25px)
+    }
+  }
+}
+
+.benefits__subheading--energy::before {
+  width: 42px;
+  left: calc(50% - 21px);
+  background-image: url('../img/energy.svg');
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 21px);
+  }
+}
+
+.benefits__subheading--eco::before {
+  width: 46px;
+  left: calc(50% - 23px);
+  background-image: url('../img/eco.svg');
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc(50% - 23px);
+  }
+}
+
+.benefits__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 72px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.benefits__text--comfort {
+  padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 25px;
+  }
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.benefits__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 339px 339px;
+    gap: 18px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

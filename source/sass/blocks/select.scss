@@ -1,0 +1,40 @@
+.select {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
+}
+
+.select__label {
+  margin: 0;
+}
+
+.select__option {
+  position: relative;
+  padding-left: 19px;
+  padding-right: 30px;
+  margin: 0;
+  color: $primary-color;
+
+  &::after {
+    @include pseudo();
+    top: 9px;
+    right: 10px;
+    width: 10px;
+    height: 6px;
+    background-image: url('../img/arrow-up.svg');
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 21px;
+  }
+}
+
+.select__options {
+  display: none;
+}

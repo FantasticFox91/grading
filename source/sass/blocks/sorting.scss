@@ -1,0 +1,19 @@
+.sorting {
+  padding-top: 5px;
+  padding-bottom: 11px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.sorting__heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}

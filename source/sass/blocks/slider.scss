@@ -1,0 +1,161 @@
+.slider {
+  position: relative;
+}
+
+.slider__image-container {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.slider__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(2px);
+  }
+}
+
+.slider__description {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 140px;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: left;
+    order: 2;
+  }
+}
+
+.slider__heading {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+
+  &::after {
+    content: "Новинка!";
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+
+    &::after {
+      top: 10px;
+      left: 0;
+    }
+  }
+}
+
+.slider__text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  font-weight: 400;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 604px;
+    font-size: 20px;
+    line-height: 32px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    padding: 0;
+  }
+}
+
+.slider__old-price {
+  margin-right: 2px;
+  @include fonts($main-font, 16px, 32px, 400, $primary-color);
+  text-decoration: line-through;
+}
+
+.slider__new-price {
+  @include fonts($main-font, 20px, 32px, 600);
+}
+
+.slider__price-and-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 46px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.slider__price {
+  padding-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 21px;
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__control {
+  position: relative;
+  width: 20px;
+  border: none;
+  background-color: transparent;
+  transform: translateY(-5px);
+
+  &::after,
+  &::before {
+    @include pseudo();
+    width: 12px;
+    height: 2px;
+    left: 3px;
+    background-color: $primary-color;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    top: calc(50% + 8px);
+    transform: rotate(45deg);
+  }
+}
+
+.slider__control--next {
+  transform: rotate(180deg) translateY(-5px);
+}
