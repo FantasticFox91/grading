@@ -1,1 +1,1 @@
-# grading
+# Grading project for HTML Academy
