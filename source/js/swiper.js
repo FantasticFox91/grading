@@ -1,4 +1,4 @@
-import Swiper from '../../swiper/swiper-bundle.esm.browser.js';
+import Swiper from '../swiper/swiper-bundle.esm.browser.js';
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
