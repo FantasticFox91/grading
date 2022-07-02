@@ -270,6 +270,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   width: 62px;
   height: 50px;
+  cursor: pointer;
 
   &::after {
     @include pseudo();
@@ -282,6 +283,18 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.swiper-pagination-bullet:hover {
+  &::after {
+    background-color: $primary-color-opacity;
+  }
+}
+
+.swiper-pagination-bullet:active {
+  &::after {
+    background-color: $primary-color;
+  }
+}
+
 .swiper-pagination-bullet:not(:last-of-type) {
   margin-right: 8px;
 }
@@ -289,5 +302,11 @@ input::-webkit-inner-spin-button {
 .swiper-pagination-bullet-active {
   &::after {
     background-color: $primary-color;
+  }
+
+  &:hover {
+    &::after {
+      background-color: $primary-color;
+    }
   }
 }
