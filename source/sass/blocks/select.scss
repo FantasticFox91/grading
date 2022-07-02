@@ -10,27 +10,72 @@
   }
 }
 
-.select__label {
+.select__heading {
   margin: 0;
+  font: inherit;
 }
 
 .select__option {
-  position: relative;
-  padding-left: 19px;
-  padding-right: 30px;
   margin: 0;
+  padding: 8px 20px;
+  font-weight: 400;
   color: $primary-color;
-
-  &::after {
-    @include pseudo();
-    top: 9px;
-    right: 10px;
-    width: 10px;
-    height: 6px;
-    background-image: url("../img/arrow-up.svg");
-  }
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-left: 21px;
   }
+}
+
+.select__option:not(.select__option--disabled):hover {
+  background-color: $secondary-color;
+}
+
+.select__option--selected {
+  padding: 0 30px 0 10px;
+  font-weight: 600;
+  border-radius: 4px;
+  background: url("../img/arrow-up.svg") no-repeat 100% 50%;
+  cursor: pointer;
+}
+
+.select__option--selected:hover {
+  background-color: $secondary-color;
+}
+
+.select__options {
+  top: 30px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: $basic-white;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.select__option:not(:last-child):not(:first-child) {
+  border-bottom: 1px solid $secondary-color;
+}
+
+.select__container {
+  padding-bottom: 11px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: $primary-color;
+}
+
+.select__container:hover {
+  .select__options {
+    display: flex;
+    flex-direction: column;
+    min-width: 190px;
+  }
+}
+
+.select__option--disabled {
+  background-color: $primary-color;
+  color: $basic-white;
+  border-radius: 4px 4px 0 0;
 }
