@@ -2,6 +2,6 @@
 
 **Затраченное время**
 ---
-Примерно 22 часа
-Ссылка на отчет(https://drive.google.com/file/d/1_TEFKJ3DEbOYICrbjtIXeGHr_Wqvq5GF/view?usp=sharing)
+Примерно 24 часа
+Ссылка на отчет(https://drive.google.com/file/d/1xobOHfMumwEVhW8e1CHSNx4jXwdjIczb/view?usp=sharing)
 ---
