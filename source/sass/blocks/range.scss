@@ -93,11 +93,11 @@
 }
 
 .range__input {
+  @include fonts($main-font, 16px, 24px, 500);
+
   width: 125px;
   padding: 8px 10px;
   text-align: center;
-  @include fonts($main-font, 16px, 24px, 500);
-
   border: 2px solid $primary-color-light;
   border-radius: 4px;
   background-color: transparent;
