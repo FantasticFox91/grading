@@ -4,7 +4,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     padding-bottom: 39px;
-    grid-template-columns: 225px 1fr 1fr;
+    grid-template-columns: minmax(225px, 1fr) 1fr 1fr;
     column-gap: 30px;
     row-gap: 11px;
   }
@@ -23,9 +23,11 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
-}
 
-.filters__group:first-child {
+  @media (min-width: 900px) {
+    justify-self: center;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0 2px;
   }

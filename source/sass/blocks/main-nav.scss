@@ -49,12 +49,12 @@
 
 .main-nav__wrapper {
   position: absolute;
-  top: -300px;
+  top: -100%;
   left: 0;
   display: flex;
   width: 100%;
   background-color: $basic-white;
-  z-index: 2;
+  z-index: 5;
   transition: $basic-animation;
 
   @media (min-width: $tablet-width) {

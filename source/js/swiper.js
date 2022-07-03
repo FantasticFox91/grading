@@ -1,4 +1,4 @@
-import Swiper from '../swiper/swiper-bundle.esm.browser.js';
+import Swiper from '../swiper/swiper-bundle.esm.browser.min.js';
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -18,3 +18,5 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper__button--prev',
   },
 });
+
+export { swiper };
