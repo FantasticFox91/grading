@@ -8,6 +8,7 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="stylesheet" href="./leaflet/leaflet.css">
+    <link rel="stylesheet" href="./noUiSlider/nouislider.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
@@ -191,7 +192,7 @@
             <fieldset class="filters__group">
               <legend class="filters__title filters__title--price">Цена</legend>
   <!-- Для отключения range дописать класс range--disabled-->
-              <div class="range">
+              <div class="range" id="range">
                 <div class="range__scale">
                   <div class="range__bar">
                     <button class="range__toggle range__toggle-min" type="button">
@@ -202,14 +203,14 @@
                     </button>
                   </div>
                 </div>
-                <div class="range__wrapper-inputs">
-                  <label class="filters__label filters__label--min">
-                    <input class="range__input" type="number" placeholder="0" name="min-price">
-                  </label>
-                  <label class="filters__label">
-                  <input class="range__input" type="number" value="900" name="max-price">
-                  </label>
-                </div>
+              </div>
+              <div class="range__wrapper-inputs">
+                <label class="filters__label filters__label--min">
+                  <input class="range__input range__input--min" type="number" placeholder="0" min="0" name="min-price">
+                </label>
+                <label class="filters__label">
+                <input class="range__input range__input--max" type="number" value="900" max="100" name="max-price">
+                </label>
               </div>
             </fieldset>
             <fieldset class="filters__group">
@@ -527,5 +528,6 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin="">
     </script>
+    <script src="./noUiSlider/noUiSlider.min.js" type="text/javascript"></script>
   </body>
 </html>
